@@ -35,11 +35,6 @@ Features:
 - `DELETE /appointment/delete/{appointmentID}` - Delete appointment  
 - `GET /appointment/all` - List all appointments  
 
-## Sample Data
-
-- Admin example: John Doe, john.doe@example.com, 0712345678  
-- Appointment example: Project Meeting, Location: Conference Room, Date: 2025-06-22, linked to admin
-
 ## How to Run
 
 1. Clone the repository  
