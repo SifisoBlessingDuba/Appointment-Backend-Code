@@ -1,51 +1,49 @@
-# Spring Boot Car and Customer API
-![Screenshot 2025-06-22 192150](https://github.com/user-attachments/assets/7aaeb034-86dd-4cf8-a274-6ef185fba78a)
+# Spring Boot Admin and Appointment API
 
+![Screenshot 2025-06-22 192150](https://github.com/user-attachments/assets/ca661997-1933-4add-8e05-52b15a1e8f8e)
 
 
 ## About
 
-A basic Spring Boot app managing **Customers** and their **Cars** with REST APIs.
+A simple Spring Boot application managing **Admins** and their **Appointments** with REST APIs.
 
 Features:
-- CRUD for Customers
-- CRUD for Cars linked to Customers
+- CRUD operations for Admins
+- CRUD operations for Appointments linked to Admins
 - Uses JPA entity relationships
 - Sample data seeded on startup
 
-## Tech Used
+## Technologies
 
-- Java 17+
-- Spring Boot 3.x
-- Spring Data JPA / Hibernate
-- H2 or other database
-- Maven or Gradle
+- Java 17+  
+- Spring Boot 3.x  
+- Spring Data JPA / Hibernate  
+- H2 or your preferred database  
+- Maven or Gradle  
 
 ## API Endpoints
 
-### Customers
-- `POST /Customer/save` - Create customer
-- `POST /Customer/update` - Update customer
-- `DELETE /Customer/deleteCustomer/{ID}` - Delete customer
-- `GET /Customer/readCustomer/{ID}` - Get customer by ID
-- `GET /Customer/allCustomers` - Get all customers
+### Admins
+- `POST /admin/save` - Create admin  
+- `GET /admin/read/{adminID}` - Get admin by ID  
+- `DELETE /admin/delete/{adminID}` - Delete admin  
+- `GET /admin/all` - List all admins  
 
-### Cars
-- `POST /Car/add` - Create car
-- `POST /Car/update` - Update car
-- `DELETE /Car/deleteCar/{carId}` - Delete car
-- `GET /Car/readCar/{carId}` - Get car by ID
-- `GET /Car/allCars` - Get all cars
+### Appointments
+- `POST /appointment/save` - Create appointment  
+- `GET /appointment/read/{appointmentID}` - Get appointment by ID  
+- `DELETE /appointment/delete/{appointmentID}` - Delete appointment  
+- `GET /appointment/all` - List all appointments  
 
 ## Sample Data
 
-- Customer: Sifiso Duba, sifiso@example.com, 0712345678, Cape Town  
-- Car: Toyota Corolla, White, linked to above customer
+- Admin example: John Doe, john.doe@example.com, 0712345678  
+- Appointment example: Project Meeting, Location: Conference Room, Date: 2025-06-22, linked to admin
 
 ## How to Run
 
-1. Clone repo  
-2. Configure DB in `application.properties`  
+1. Clone the repository  
+2. Configure your database connection in `application.properties`  
 3. Run the app (`mvn spring-boot:run`)  
-4. Use Postman or browser to test endpoints
+4. Test endpoints using Postman or browser  
 
